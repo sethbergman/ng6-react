@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "http-server -a '0.0.0.0' -p '5000'",
-    "postbuild": "npm run build",
+    "prebuild": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
