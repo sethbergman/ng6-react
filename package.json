@@ -1,5 +1,5 @@
 {
-  "name": "Airtable API UI",
+  "name": "ng6-react",
   "version": "0.1.0",
   "description": "React app and utitlity to help filter, format and encode the parameters for API requests in Airtables",
   "author": "Seth Bergman",
