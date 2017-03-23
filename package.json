@@ -20,8 +20,8 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start:dev": "http-server -a '0.0.0.0' -p '5000' /build",
-    "start": "npm run build && npm run serve",
+    "start": "http-server -a '0.0.0.0' -p '5000' /dist",
+    "dev": "npm run build && npm run serve",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
