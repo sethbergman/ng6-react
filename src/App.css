@@ -22,3 +22,135 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+body {
+  text-align: center;
+  font: 16px/24px Helvetica, sans-serif;
+}
+
+input, textarea, button, select {
+  font: inherit;
+}
+
+input, textarea {
+  width: 500px;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+
+textarea {
+  font-family: monospace;
+}
+
+#root {
+  text-align: left;
+  width: 700px;
+  margin: 40px auto;
+  padding-bottom: 200px;
+}
+
+.result {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 180px;
+  background: #444;
+  color: #fff;
+}
+
+.result .content {
+  margin: auto;
+  width: 700px;
+}
+
+.result h4 {
+  margin-bottom: 0;
+}
+
+.result textarea {
+  height: 100px;
+  background: transparent;
+  color: #fff;
+  border: 0;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.section h2.param {
+  font-family: monospace;
+}
+
+.section p {
+  margin: 0;
+}
+
+.section {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.section a {
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section p a {
+  font-weight: normal;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.allFields {
+  width: 500px;
+  padding: 3px;
+  font-style: italic;
+  margin-bottom: 4px;
+  color: #666;
+}
+
+label.field, label.sort {
+  display: block;
+  position: relative;
+  width: 500px;
+  height: 23px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  color: #666;
+}
+
+label.field input, label.sort input {
+  position: absolute;
+  left: 95px;
+  width: 365px;
+  border: 0;
+  padding: 0;
+}
+
+label.field button, label.sort button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  border: 0;
+  background: #eee;
+  border-left: 1px solid #ccc;
+  font: inherit;
+  color: #444;
+}
+
+label.sort input {
+  width: 265px;
+}
+
+label.sort select {
+  position: absolute;
+  left: 365px;
+}

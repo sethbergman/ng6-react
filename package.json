@@ -1,8 +1,15 @@
 {
-  "name": "ng6-react",
+  "name": "Airtable API UI",
   "version": "0.1.0",
+  "description": "React app and utitlity to help filter, format and encode the parameters for API requests in Airtables",
+  "author": "Seth Bergman",
+  "license": "MIT",
   "homepage": "http://ng6-react.npmstack.com",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sethbergman/ng6-react.git"
+  },
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
