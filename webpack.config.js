@@ -16,10 +16,11 @@ var config = {
 
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'ng-annotate!babel', exclude: /node_modules/},
+      {test: /\.js$/, loader: 'ng-annotate!babel-loader', exclude: /node_modules/},
       {test: /\.html$/, loader: 'raw-loader', exclude: /node_modules/},
       {test: /\.css$/, loader: 'style!css', exclude: /node_modules/},
-      {test: /\.styl$/, loader: 'style!css!stylus', exclude: /node_modules/}
+      {test: /\.styl$/, loader: 'style!css!stylus', exclude: /node_modules/},
+      { test: /\.jsx$/, exclude: /node_modules/, loader: 'js-loader' }
     ]
   }
 };
