@@ -14,17 +14,16 @@
     "http-server": "^0.9.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "sw-precache": "^4.2.2"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start:dev": "http-server -a '0.0.0.0' -p '5000' /build",
-    "start": "npm run build && http-server -a '0.0.0.0' -p '5000' /build",
-    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "serve": "npm install -g serve && serve -s build"
+    "eject": "react-scripts eject"
   }
 }
