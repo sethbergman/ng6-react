@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start:dev": "http-server -a '0.0.0.0' -p '5000' /build",
-    "start": "npm run build && npm run serve",
+    "start": "npm run build && http-server -a '0.0.0.0' -p '5000' /build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
